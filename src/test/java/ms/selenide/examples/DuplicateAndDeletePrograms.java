@@ -11,7 +11,7 @@ public class DuplicateAndDeletePrograms extends TestBase {
     ProgramsPage programsPage = page(ProgramsPage.class);
 
     String dliProgramName = "AutomationDLI" + " " + Math.floor((Math.random() * 10000) + 1);
-    String copyOfDliProgramName = "Copy of "+dliProgramName;
+    String copyOfDliProgramName = "Copy of " + dliProgramName;
 
     loginPage.loginAs("mikhail.siekhin", "Password1");
 

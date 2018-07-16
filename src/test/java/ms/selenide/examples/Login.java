@@ -13,7 +13,6 @@ public class Login extends TestBase {
 
        loginPage.loginAs("mikhail.siekhin", "Password1");
 
-       zonesPage.confirmationHeader();
        zonesPage.getMqttState();
        zonesPage.getCopyrightInfo();
     }

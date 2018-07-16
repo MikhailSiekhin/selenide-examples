@@ -58,7 +58,7 @@ public class ProgramsPage {
 
   }
 
-  public void verifyProgramsTableIsVisible(){
+  public void verifyProgramsTableIsVisible() {
     tableList.shouldBe(Condition.visible);
     tableList.shouldNotHave(Condition.text("Please wait..."));
   }
