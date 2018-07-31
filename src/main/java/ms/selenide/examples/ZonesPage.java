@@ -15,7 +15,7 @@ import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.refresh;
 
-public class ZonesPage {
+public class ZonesPage extends MainPage {
 
     @FindBy(partialLinkText =  "ZONES")
     public SelenideElement zonesLink;
@@ -38,9 +38,6 @@ public class ZonesPage {
     @FindBy(css = "button[class='btn btn-primary']")
     public SelenideElement okButton;
 
-    @FindBy(css = "div[class='zones-table fixedDataTableLayout_main public_fixedDataTable_main']")
-    public SelenideElement zonesTable;
-
     public ZonesPage getMqttState(){
         mqttIcon.shouldHave(cssValue("color","rgba(0, 255, 0, 1)"));
         return this;
@@ -49,11 +46,6 @@ public class ZonesPage {
     public ZonesPage getCopyrightInfo(){
         copyrightInfo.shouldHave(text("© 2016, 2017, 2018 LumiGrow, Inc. All Rights Reserved."));
         return this;
-    }
-
-    public void verifyZonesTableIsVisible(){
-        zonesTable.shouldBe(Condition.visible);
-        zonesTable.shouldNotHave(Condition.text("Please wait..."));
     }
 
     public void addZone(String zoneName, String roomName){

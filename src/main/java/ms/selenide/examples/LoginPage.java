@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 
-public class LoginPage {
+public class LoginPage extends MainPage{
 
     @FindBy(css = "#loginusername" )
     public SelenideElement loginField;

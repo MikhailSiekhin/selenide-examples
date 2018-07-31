@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.refresh;
 
-public class FacilitiesPage {
+public class FacilitiesPage extends MainPage {
 
   @FindBy(css = "a[href='/#!/facilities']")
   public SelenideElement facilitiesLink;
@@ -25,16 +25,8 @@ public class FacilitiesPage {
   @FindBy(css = "button[ng-click='ok()']")
   public SelenideElement okButton;
 
-  @FindBy(css = "table > tbody > tr > td")
-  public SelenideElement tableList;
-
   public void openFacilitiesPage(){
     facilitiesLink.click();
-  }
-
-  public void verifyFacilitiesTableIsVisible() {
-    tableList.shouldBe(Condition.visible);
-    tableList.shouldNotHave(Condition.text("Please wait..."));
   }
 
   public void addFacility(String facilityName){
@@ -44,11 +36,11 @@ public class FacilitiesPage {
     okButton.shouldBe(visible);
     okButton.click();
     refresh();
-    verifyFacilitiesTableIsVisible();
+    verifyTableIsVisible();
   }
 
   public void deleteFacility(String facilityName){
-    verifyFacilitiesTableIsVisible();
+    verifyTableIsVisible();
     SelenideElement table = $(".table");
     ElementsCollection rowsTable = table.$$("tr.ng-scope");
     int rowsCount = rowsTable.size();
@@ -70,11 +62,11 @@ public class FacilitiesPage {
         }
       }
     }
-    verifyFacilitiesTableIsVisible();
+    verifyTableIsVisible();
   }
 
   public void editFacility(String facilityName, String newFacilityName){
-    verifyFacilitiesTableIsVisible();
+    verifyTableIsVisible();
     SelenideElement table = $(".table");
     ElementsCollection rowsTable = table.$$("tr.ng-scope");
     int rowsCount = rowsTable.size();
@@ -99,7 +91,7 @@ public class FacilitiesPage {
         }
       }
     }
-    verifyFacilitiesTableIsVisible();
+    verifyTableIsVisible();
   }
 
 }

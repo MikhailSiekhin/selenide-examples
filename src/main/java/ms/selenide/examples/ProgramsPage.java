@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
 
 import static com.codeborne.selenide.Selenide.$;
 
-public class ProgramsPage {
+public class ProgramsPage extends MainPage {
 
   @FindBy(css = "a[href='/#!/programs']")
   public SelenideElement programsLink;
@@ -32,9 +32,6 @@ public class ProgramsPage {
   @FindBy(css = "button[class='btn dli-program__button save']")
   public SelenideElement saveButton;
 
-  @FindBy(css = "table > tbody > tr > td")
-  public SelenideElement tableList;
-
   @FindBy(css = "button[ng-click='ok()']")
   public SelenideElement okButton;
 
@@ -50,7 +47,7 @@ public class ProgramsPage {
     programNameInput.sendKeys(name);
     saveButton.shouldNotHave(Condition.attribute("disabled"));
     saveButton.click();
-    verifyProgramsTableIsVisible();
+    verifyTableIsVisible();
   }
 
   public void createSpectralProgram() {
@@ -58,13 +55,8 @@ public class ProgramsPage {
 
   }
 
-  public void verifyProgramsTableIsVisible() {
-    tableList.shouldBe(Condition.visible);
-    tableList.shouldNotHave(Condition.text("Please wait..."));
-  }
-
   public void verifyProgramIsCreated(String programName) {
-    verifyProgramsTableIsVisible();
+    verifyTableIsVisible();
     SelenideElement table = $(".table");
     ElementsCollection rowsTable = table.$$("tr.ng-scope");
     int rowsCount = rowsTable.size();
@@ -81,7 +73,7 @@ public class ProgramsPage {
   }
 
   public void deleteProgram(String programName) {
-    verifyProgramsTableIsVisible();
+    verifyTableIsVisible();
     SelenideElement table = $(".table");
     ElementsCollection rowsTable = table.$$("tr.ng-scope");
     int rowsCount = rowsTable.size();
@@ -103,11 +95,11 @@ public class ProgramsPage {
         }
       }
     }
-    verifyProgramsTableIsVisible();
+    verifyTableIsVisible();
   }
 
   public void duplicateProgram(String programName) {
-    verifyProgramsTableIsVisible();
+    verifyTableIsVisible();
     SelenideElement table = $(".table");
     ElementsCollection rowsTable = table.$$("tr.ng-scope");
     int rowsCount = rowsTable.size();
@@ -125,7 +117,7 @@ public class ProgramsPage {
         }
       }
     }
-    verifyProgramsTableIsVisible();
+    verifyTableIsVisible();
   }
 
   public boolean retryingFindClick(By by) {
