@@ -5,7 +5,7 @@ import org.xbill.DNS.Zone;
 
 import static com.codeborne.selenide.Selenide.page;
 
-public class CreateEditDeleteZones extends TestBase {
+public class CreateEditDeleteZonesTest extends TestBase {
   @Test
   public void zoneShouldBeCreatedEditedDeleted(){
     LoginPage loginPage = page(LoginPage.class);

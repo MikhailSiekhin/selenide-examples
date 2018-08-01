@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static com.codeborne.selenide.Selenide.page;
 
-public class CreateEditDeleteRooms extends TestBase {
+public class CreateEditDeleteRoomsTest extends TestBase {
   @Test
   public void roomShouldBeCreatedEditedDeleted(){
     LoginPage loginPage = page(LoginPage.class);

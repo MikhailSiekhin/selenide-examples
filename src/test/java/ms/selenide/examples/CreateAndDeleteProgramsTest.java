@@ -4,23 +4,19 @@ import org.junit.Test;
 
 import static com.codeborne.selenide.Selenide.page;
 
-public class DuplicateAndDeletePrograms extends TestBase {
+public class CreateAndDeleteProgramsTest extends TestBase {
   @Test
-  public void dliProgramShouldBeDuplicatedAndDeleted() {
+  public void dliProgramShouldBeCreatedAndDeleted() {
     LoginPage loginPage = page(LoginPage.class);
     ProgramsPage programsPage = page(ProgramsPage.class);
 
     String dliProgramName = "AutomationDLI" + " " + Math.floor((Math.random() * 10000) + 1);
-    String copyOfDliProgramName = "Copy of " + dliProgramName;
 
     loginPage.loginAs("mikhail.siekhin", "Password1");
 
     programsPage.openProgramsPage();
     programsPage.createDliProgram(dliProgramName);
     programsPage.verifyProgramIsCreated(dliProgramName);
-    programsPage.duplicateProgram(dliProgramName);
     programsPage.deleteProgram(dliProgramName);
-    programsPage.verifyProgramIsCreated(copyOfDliProgramName);
-    programsPage.deleteProgram(copyOfDliProgramName);
   }
 }

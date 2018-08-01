@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static com.codeborne.selenide.Selenide.page;
 
-public class CreateEditDeleteFacilities extends TestBase {
+public class CreateEditDeleteFacilitiesTest extends TestBase {
   @Test
   public void facilityShouldBeCreated() {
     LoginPage loginPage = page(LoginPage.class);

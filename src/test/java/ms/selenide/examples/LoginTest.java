@@ -5,7 +5,7 @@ import org.junit.Test;
 import static com.codeborne.selenide.Selenide.page;
 
 
-public class Login extends TestBase {
+public class LoginTest extends TestBase {
     @Test
     public void userCanLogin(){
        LoginPage loginPage = page(LoginPage.class);
