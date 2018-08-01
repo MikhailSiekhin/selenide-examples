@@ -1,6 +1,8 @@
-package ms.selenide.examples;
+package tests;
 
 import org.junit.Test;
+import pages.FacilitiesPage;
+import pages.LoginPage;
 
 import static com.codeborne.selenide.Selenide.page;
 

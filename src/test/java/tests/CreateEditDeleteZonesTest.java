@@ -1,7 +1,8 @@
-package ms.selenide.examples;
+package tests;
 
 import org.junit.Test;
-import org.xbill.DNS.Zone;
+import pages.LoginPage;
+import pages.ZonesPage;
 
 import static com.codeborne.selenide.Selenide.page;
 
