@@ -15,7 +15,10 @@ public class TestBase {
 
     @BeforeClass
     public static void setUp(){
-        System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver");
+        //for mac os
+       // System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver");
+        //for linux-jenkins
+        System.setProperty("webdriver.chrome.driver","src/test/resources/jenkins/chromedriver");
         Configuration.browser = "chrome";
         Configuration.headless = true;
         open("https://two.dev.lumigrow.com/");
