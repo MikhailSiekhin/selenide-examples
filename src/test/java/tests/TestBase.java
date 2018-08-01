@@ -15,8 +15,7 @@ public class TestBase {
 
     @BeforeClass
     public static void setUp(){
-        ChromeDriverManager.getInstance().setup();
-        //System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver");
+        System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver");
         Configuration.browser = "chrome";
         Configuration.headless = true;
         open("https://two.dev.lumigrow.com/");
