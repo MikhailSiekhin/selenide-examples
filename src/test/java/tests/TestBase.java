@@ -15,7 +15,7 @@ public class TestBase {
 
     @BeforeClass
     public static void setUp(){
-        System.setProperty("webdriver.chrome.driver","selenide-examples/src/test/resources/chromedriver");
+        System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver");
         Configuration.browser = "chrome";
         Configuration.headless = true;
         open("https://two.dev.lumigrow.com/");
