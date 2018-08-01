@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9a9f0ff-6d72-41fc-9fb8-b16e4cae45ed" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/selenide-example.iml" beforeDir="false" afterPath="$PROJECT_DIR$/selenide-example.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenide-example.iws" beforeDir="false" afterPath="$PROJECT_DIR$/selenide-example.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ms/selenide/examples/FacilitiesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/FacilitiesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ms/selenide/examples/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ms/selenide/examples/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ms/selenide/examples/ProgramsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ProgramsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ms/selenide/examples/RoomsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/RoomsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ms/selenide/examples/ZonesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ZonesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/chromedriver" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/chromedriver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ms/selenide/examples/CreateAndDeleteProgramsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CreateAndDeleteProgramsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ms/selenide/examples/CreateEditDeleteFacilitiesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CreateEditDeleteFacilitiesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ms/selenide/examples/CreateEditDeleteRoomsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CreateEditDeleteRoomsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ms/selenide/examples/CreateEditDeleteZonesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CreateEditDeleteZonesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ms/selenide/examples/DuplicateAndDeleteProgramsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/DuplicateAndDeleteProgramsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ms/selenide/examples/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ms/selenide/examples/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -183,7 +168,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LoginTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LoginTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/LoginTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
@@ -198,17 +183,17 @@
       <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="135">
+              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+            <state relative-caret-position="302">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
@@ -250,8 +235,8 @@
         <option value="$PROJECT_DIR$/src/test/java/tests/CreateEditDeleteZonesTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/DuplicateAndDeleteProgramsTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/TestBase.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/TestBase.java" />
       </list>
     </option>
   </component>
@@ -354,8 +339,7 @@
               <item name="selenide-examples" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -414,7 +398,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Whole project (1)">
+  <component name="RunManager" selected="JUnit.LoginTest (1)">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -559,8 +543,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Whole project (1)" />
         <item itemvalue="JUnit.LoginTest (1)" />
+        <item itemvalue="JUnit.Whole project (1)" />
         <item itemvalue="JUnit.LoginTest" />
         <item itemvalue="JUnit.Whole project" />
         <item itemvalue="JUnit.Login" />
@@ -606,21 +590,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CreateAndDeleteDliProgram - 2018.06.26 at 18h 02m 15s.xml">
-      <configuration name="CreateAndDeleteDliProgram" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Login - 2018.07.31 at 15h 25m 30s.xml">
-      <configuration name="Login" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Login - 2018.07.31 at 15h 25m 57s.xml">
-      <configuration name="Login" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Whole_project - 2018.07.31 at 15h 28m 09s.xml">
-      <configuration name="Whole project" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Login - 2018.07.31 at 15h 33m 44s.xml">
-      <configuration name="Login" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Login - 2018.07.31 at 15h 34m 11s.xml">
       <configuration name="Login" configurationId="JUnit" />
     </history-entry>
@@ -636,9 +605,24 @@
     <history-entry file="Whole_project_(1) - 2018.08.01 at 12h 35m 13s.xml">
       <configuration name="Whole project (1)" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LoginTest - 2018.08.01 at 12h 59m 11s.xml">
+      <configuration name="LoginTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoginTest - 2018.08.01 at 12h 59m 27s.xml">
+      <configuration name="LoginTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoginTest - 2018.08.01 at 13h 00m 11s.xml">
+      <configuration name="LoginTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoginTest - 2018.08.01 at 13h 00m 31s.xml">
+      <configuration name="LoginTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoginTest - 2018.08.01 at 13h 05m 10s.xml">
+      <configuration name="LoginTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17278000" />
+    <option name="totallyTimeSpent" value="18335000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -654,6 +638,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="825" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="13" />
@@ -665,8 +650,8 @@
       <window_info anchor="right" id="Maven Projects" order="5" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.36595744" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36595744" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32907802" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
@@ -1063,10 +1048,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="135">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -1077,13 +1069,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
         </state>
       </provider>
     </entry>
